@@ -1,0 +1,4 @@
+exploit in modules/exploits/windows/ssh/sysax_ssh_username.rb
+
+TO DO
+1.Download sysax multi server 5.53(or before).
