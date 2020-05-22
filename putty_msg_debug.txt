@@ -1,0 +1,11 @@
+1.putty_msg_debug.rb在module/exploits/windows/ssh/putty_msg_debug.rb。
+
+2.这个文件的结构
+
+2.1.从Msf::Exploit::Remote继承了类MetasploitModule
+Msf::Exploit::Remote在lib/msf/core/exploit.rb中。
+2.2.Rank=NormalRanking
+2.3.包含了Msf::Exploit::Remote::TcpServer
+在lib/msf/core/exploit/tcp_server.rb中
+2.4.定义了两个函数
+initialize和on_client_connect。
