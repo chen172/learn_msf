@@ -9,3 +9,8 @@ Msf::Exploit::Remote在lib/msf/core/exploit.rb中。
 在lib/msf/core/exploit/tcp_server.rb中
 2.4.定义了两个函数
 initialize和on_client_connect。
+
+3.流程
+当msf用use命令调用这个模块的时候，就是调用了initialize函数。
+这个函数首先使用update_info得到info这个参数。
+update_info定义在lib/msf/core/module的module_info.rb中。
