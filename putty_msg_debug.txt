@@ -14,3 +14,14 @@ initialize和on_client_connect。
 当msf用use命令调用这个模块的时候，就是调用了initialize函数。
 这个函数首先使用update_info得到info这个参数。
 update_info定义在lib/msf/core/module的module_info.rb中。
+调用Remote类的initialize函数。
+
+4.Remote类说明
+包含了Msf::Exploit::AutoTarget模块
+在lib/msf/core/exploit/auto_target.rb中
+一个初始化函数
+初始化函数的作用，调用父类的初始化函数，建立Socket数组。
+exploit_type函数
+add_socket函数
+remove_socket函数
+abort_socket函数
