@@ -1,0 +1,6 @@
+putty 0.53源码分析
+分析ssh.c的do_ssh2_transport函数
+调试方法：
+FILE *ff;
+ff = fopen("log.txt", "a+");
+fprintf(ff, "log string\n");
