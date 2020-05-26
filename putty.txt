@@ -4,3 +4,9 @@ putty 0.53源码分析
 FILE *ff;
 ff = fopen("log.txt", "a+");
 fprintf(ff, "log string\n");
+
+do_ssh2_transport函数一开始是客户端和服务器对使用的算法达成一致。
+再SSH.C的logeventf函数中会有缓冲区溢出漏洞。
+windows2000是32位的
+putty0.53是32位的程序。
+从ssh2_pkt_getstring第三次得到的字符串就送到logeventf函数中。
