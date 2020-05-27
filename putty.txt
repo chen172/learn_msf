@@ -10,3 +10,4 @@ do_ssh2_transport函数一开始是客户端和服务器对使用的算法达成
 windows2000是32位的
 putty0.53是32位的程序。
 从ssh2_pkt_getstring第三次得到的字符串就送到logeventf函数中。
+这是一个缓冲区溢出漏洞，要分析过程是如何对栈进行分配的
