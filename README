@@ -6,3 +6,4 @@ Goal: 分析msfvenom -p windows/meterpreter/reverse_tcp -LHOST=192.168.1.10 -f e
 
 TO DO
 分析metasploit源码下的lib/msf/base/simple下的payload.rb的generate_simple函数
+分析TERMINAL.C下的term_out函数。
